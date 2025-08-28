@@ -5,22 +5,24 @@
 Retail Chatbot is a conversational AI application designed to assist customers with product inquiries, recommendations, and order-related questions. It uses natural language processing (NLP) and machine learning to provide human-like responses, improving customer experience and reducing the need for manual support.
 
 ## How I built it
-Model: Fine-tuned transformer-based NLP model (e.g., BERT, DistilBERT, or GPT) for intent recognition and response generation.
+Backend Framework: FastAPI for serving chatbot queries via REST API.
 
-Framework: Python with libraries such as PyTorch or TensorFlow for model training.
+LLM Engine: OpenAI GPT-4o via LlamaIndex.
 
-Data: Conversational dataset with labeled intents (greetings, product queries, order status, etc.).
+Document Indexing: PDF product data loaded using SimpleDirectoryReader and stored in a VectorStoreIndex.
 
-Pipeline:
+Memory: ChatMemoryBuffer to maintain conversation history for each session.
 
-Text preprocessing (tokenization, stop-word removal, lemmatization).
-
-Intent classification using deep learning.
-
-Response generation via rule-based replies or retrieval-based responses.
+Session Management: Each session ID maps to an independent OpenAIAgent instance.
 
 
 ## Built with
--FastAPI
--Uvicorn
--Llama
+Python
+
+FastAPI
+
+LlamaIndex
+
+OpenAI GPT-4o
+
+Uvicorn
