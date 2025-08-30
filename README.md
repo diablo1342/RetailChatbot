@@ -2,7 +2,7 @@
 
 ## 📝 Overview 📝
 
-Retail Chatbot is a conversational AI application designed to assist customers with product inquiries, recommendations, and order-related questions. It uses natural language processing (NLP) and machine learning to provide human-like responses, improving customer experience and reducing the need for manual support.
+Retail Chatbot is a conversational AI application designed to assist customers with product inquiries, recommendations, and order-related questions. It requires users to input their own database in pdf format, and it will search the pdf and provide users with the items that fit their desires.
 
 ## How I built it
 Backend Framework: FastAPI for serving chatbot queries via REST API.
